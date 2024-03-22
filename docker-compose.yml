@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+    environment:
+      MONGODB_URI: ${MONGODB_URI}
+
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
