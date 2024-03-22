@@ -26,8 +26,9 @@ This is a Node.js/Express.js backend API for fetching price and volume data from
 
 ### Containerization (using docker)
 - To run the app using a container:
-&nbsp;&nbsp;- Use *docker-compose build* to the docker image.
-&nbsp;&nbsp;- *docker-compose up* command to start the container
+&nbsp;&nbsp;<br>- Use ***docker-compose build*** to build the docker image.
+&nbsp;&nbsp;<br>- ***docker-compose up*** command to start the container
+&nbsp;&nbsp;<br>- You will have to add the connection string to the environment variables
 
 ### Note 
 
