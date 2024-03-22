@@ -23,3 +23,12 @@ This is a Node.js/Express.js backend API for fetching price and volume data from
 ### Price and Volume Data
 
 - **GET - localhost:port/api/data/:id/price-volume**: Retrieves both price and volume data for a specific data record by ID.
+
+### Containerization (using docker)
+- To run the app using a container:
+&nbsp;&nbsp;- Use *docker-compose build* to the docker image.
+&nbsp;&nbsp;- *docker-compose up* command to start the container
+
+### Note 
+
+- The `.env` file containing sensitive information such as API keys, passwords, and connection strings is not included in this repository. Before running the application, ensure that you create your own `.env` file locally with the required environment variables.
